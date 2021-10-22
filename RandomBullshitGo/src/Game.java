@@ -43,10 +43,21 @@ public static void FuckYourTimeManagement(int timeToFuckingSleep) {
 			
 			System.out.println(enemie.Events(4));
 			
-			FuckYourTimeManagement(1);
+			//FuckYourTimeManagement(1);
 			
 			if (player.choice() == 1) {
 				System.out.println(enemie.Events(2));
+				//	FuckYourTimeManagement(1);
+			} else if (player.choice() == 2) {
+				System.out.println(enemie.Events(3));
+				//	FuckYourTimeManagement(1);
+			}
+			
+			System.out.println("Do you want to attack him?");
+			
+			if (player.choice() == 1) {
+				enemie.receiveDmg(player.doDMG());
+				System.out.println("You attack him! Helft left: " + enemie.getHealth());
 				//	FuckYourTimeManagement(1);
 			} else if (player.choice() == 2) {
 				System.out.println(enemie.Events(3));

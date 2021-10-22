@@ -10,8 +10,22 @@ public class Mordor{
 
 	}
 
-	public int accountOfDmg() {
+	public int amountOfDmg() {
 		return DMG;
+	}
+	
+	public int receiveDmg(int DMG) {
+		HEALTH = HEALTH - DMG;
+		
+		if(HEALTH <0) {
+			return 0;
+		}else {
+			return HEALTH;
+		}
+	}
+	
+	public int getHealth() {
+		return HEALTH;
 	}
 	
 	public String Events(int Nr) {
