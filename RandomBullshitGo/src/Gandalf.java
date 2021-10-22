@@ -1,10 +1,13 @@
 
-public class Gandalf extends Entitity{
+public class Gandalf{
 	
-	int Nr;
+	int Nr, HEALTH, DMG;
+	String mageName;
 	
-	public Gandalf(int HEALTH, int DMG) {
-		super(HEALTH, DMG);
+	public Gandalf(int HEALTH, int DMG, String mageName) {
+		this.HEALTH = HEALTH;
+		this.DMG = DMG;
+		this.mageName = mageName;
 		
 	}
 
@@ -18,10 +21,11 @@ public class Gandalf extends Entitity{
 	}
 	
 	public String Events(int Nr) {
+		this.Nr = Nr;
 		if(Nr == 1) {
-			return "Hello there. Do you want a baguette magique?";
+			return mageName + ": " +"Hello there. Do you want a baguette magique?";
 		}else if(Nr == 2){
-			return "Good luck fighting!";
+			return mageName + ": " +"Good luck fighting!";
 		}else {
 			return null;
 		}

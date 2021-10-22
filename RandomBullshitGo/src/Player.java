@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Player {
 	ArrayList<String> Items = new ArrayList<String>();
-	static int HEALTH;
-	static int DMG;
+	int HEALTH;
+	int DMG;
 	
 	Scanner scanner = new Scanner(System.in);
 	
