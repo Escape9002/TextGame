@@ -39,16 +39,16 @@ public class Player {
 	
 	public int choice() {
 		System.out.println("------INPUT----------");
-		System.out.println("Yes = 1 | No = 2");
+		System.out.println("Yes = 1 | No = 0");
 		System.out.println("------INPUT----------");
 		
 		int choice = scanner.nextInt();
 		
 		if(choice == 1) {
-			System.out.println("Yes");
+			System.out.println("Chose Yes");
 			return 1;
-		}else if(choice == 2) {
-			System.out.println("No");
+		}else if(choice == 0) {
+			System.out.println("Chose No");
 			return 2;
 		}else{
 			return 0;
